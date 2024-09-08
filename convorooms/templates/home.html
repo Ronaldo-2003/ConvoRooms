@@ -1,1 +1,21 @@
-<h1> Home Page template </h1>
+{% extends "main.html" %}
+
+{% block content %}
+
+<h1> Home Template </h1>
+
+<div>
+
+    <div>
+
+        {% for room in rooms %}
+
+            <h3> {{room.id}} : {{room.name}} </h3>
+
+        {% endfor %}
+
+    </div>
+
+</div>
+
+{% endblock content %}
